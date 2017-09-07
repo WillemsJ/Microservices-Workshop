@@ -30,6 +30,13 @@ For example: creating a class with only the title.
 ### Tip 2
 To receive an array from another microservice, use Resources<> around your object instead of List<>
 
+### POST JSON body
+{
+   "name":"Kirk",
+   "rentDate":"2017-09-09",
+   "endDate":"2017-09-11",
+   "movies": ["The Matrix","Blade Runner","Iron Man 3"]
+}
 
 [Documentation](http://projects.spring.io/spring-cloud/spring-cloud.html#spring-cloud-feign)
 
