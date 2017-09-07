@@ -21,7 +21,7 @@ With the help of Eureka, Zuul will find the correct microservices to handle the 
 
 ## End result
 When starting all your applications, go to your Zuul address and try out your routing to the microservices.
-Example: localhost:9090/rental/rentals
+Example: localhost:<port>/rental/rentals
 
 ## Next Step
 `git checkout chpt5-FeignClient`
