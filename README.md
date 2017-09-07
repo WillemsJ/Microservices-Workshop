@@ -25,7 +25,7 @@ The next exercises will be done in Spring Data, if you need more help with your 
 [Documentation](http://projects.spring.io/spring-cloud/spring-cloud.html#spring-cloud-feign)
 
 ## End result
-Go to localhost:<port zuul>/rental/rentals/search
-Here you will see all the GET requests.
-For the extra exercises, use Postman for performing the operations.
+Go to localhost:<port zuul>/rental/movies/search for the first exercise
+For the further exercises, use Postman for performing the operations.
+
 
