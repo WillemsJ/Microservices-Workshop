@@ -14,10 +14,6 @@ The Config server needs a repository where all the config is stored.
 * Add a yml file for each microservice named after the configured application name.
 * Push to the remote master.
 
- spring:
-   application:
-     name: applicationName
-
 * Go to [Spring Initializr](https://start.spring.io/)
 * Add the following dependencies
     * Config Server
