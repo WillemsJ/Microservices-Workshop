@@ -1,16 +1,26 @@
-# Microservices-Workshop
-##### Author: Kevin Van Houtte
+# Chapter 2: Service Registry 
+Since we are working with a distributed system, the services don't know of each other existence.
+So how do we let the services discover each other for querying data, etc...? 
+To tackle this issue, Spring Cloud provides us the ability to register our services with Eureka.
+Eureka as a service is comparable to a phone book for your microservices.
+Each service registers itself with the service registry and tells the registry where it lives.
 
-This workshop will guide you through the core components and fundamentals of a microservices architecture. 
-Each branch has a new chapter that leads step by step till the final solution. 
-If you have any questions, try to research for yourself and then ask questions. 
+## Exercise
+* Go to [Spring Initializr](https://start.spring.io/)
+* Name the project eureka
+* Add the Eureka Server dependency
+* Generate and unzip the file
+* Add it to your local git folder. 
+* Link the two microservices to the Eureka server. 
+* Run the three applications.
 
-### Prerequisites
-1. **Editor**. Intellij will be the best choice for implementing microservices. 
+If you found the solution, the logs will tell you that they register themselves with Eureka.
+
+## End result
+* Go to localhost:<port>/eureka 
+* You should now see an UI Eureka dashboard with both the microservices registered.
 
 
-Let's go to our first exercise.
-```sh
-git checkout chpt1-Monolith
-```
+
+
 
