@@ -22,9 +22,14 @@ The next exercises will be done in Spring Data, if you need more help with your 
   * Check first if the movie is available before saving.
 * Make a soft delete method on rental where the movie gets back available.
 
+### Tip 1
 For making the Rental exercises happen, we will have to duplicate Movie class inside the Rental service to let the Feign Client work.
 You can still choose which properties you would like to receive.
 For example: creating a class with only the title.
+
+### Tip 2
+To receive an array from another microservice, use Resources<> around your object instead of List<>
+
 
 [Documentation](http://projects.spring.io/spring-cloud/spring-cloud.html#spring-cloud-feign)
 
