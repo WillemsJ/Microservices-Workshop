@@ -13,9 +13,11 @@ With the help of Eureka, Zuul will find the correct microservices to handle the 
     * Eureka Discovery
     * Config Client
 * Generate, unzip, put it in your local git.
+* Change properties into yml.
+* Externalize your configuration to the ws-config repo.
+* Enable the reverse proxy by adding @@EnableZuulProxy on top of your application.
 * Make it possible to fetch configuration from the config server.
 * Make it possible to discover the microservices.
-
 
 ## End result
 When starting all your applications, go to your Zuul address and try out your routing to the microservices.
