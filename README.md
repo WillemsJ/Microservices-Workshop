@@ -7,16 +7,21 @@ Each service registers itself with the service registry and tells the registry w
 
 ## Exercise
 * Go to [Spring Initializr](https://start.spring.io/)
-* Name the project eureka
-* Add the Eureka Server dependency
-* Generate, unzip and add it to your local git folder
-* [Link](http://cloud.spring.io/spring-cloud-static/spring-cloud-netflix/1.3.4.RELEASE/) the two microservices to the Eureka server. 
+* Name the project eureka.
+* Add the Eureka Server dependency.
+* Generate, unzip and add it to your local git folder.
+* Change your properties file to a yml file.
+* Configure the Eureka Server
+* Link the two microservices to the Eureka server by making them a Eureka Client. 
+* Have a different port when running.
 * Run the three applications.
+
+### [Documentation](http://cloud.spring.io/spring-cloud-static/spring-cloud-netflix/1.3.4.RELEASE/)
 
 If you found the solution, the logs will tell you that they register themselves with Eureka.
 
 ## End result
-* Go to the Eureka application: localhost:<port>/eureka 
+* Go to the Eureka application: localhost:<port> 
 * You should now see an UI Eureka dashboard with both the microservices registered.
 
 
