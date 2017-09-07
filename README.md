@@ -32,6 +32,6 @@ The next exercises will be done in Spring Data, if you need more help with your 
 
 ## End result
 Go to localhost:<port zuul>/rental/rentals/search
-Here you will all the GET requests.
+Here you will see all the GET requests.
 For the extra exercises, use Postman for performing the operations.
 
