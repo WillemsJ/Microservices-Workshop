@@ -35,8 +35,10 @@ The Config server needs a repository where all the config is stored.
 * Configure the config client in the bootstrap.
 * Find out how to fetch the configuration of the server.
 
+## End Result
+When starting up your microservices you will see a fetch happening to the config server. 
+If it is successful, your work is done here. 
 
-
-# Next step
+## Next step
 `git checkout chpt4-Zuul`
 
