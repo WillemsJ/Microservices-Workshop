@@ -17,10 +17,14 @@ The next exercises will be done in Spring Data, if you need more help with your 
 
 ### Movie Service
 * Find me the movies that are still available.
-#### Rental Service
+### Rental Service
 * Make a save method where rental gets saved and movie becomes unavailable.
   * Check first if the movie is available before saving.
 * Make a soft delete method on rental where the movie gets back available.
+
+For making the Rental exercises happen, we will have to duplicate Movie class inside the Rental service to let the Feign Client work.
+You can still choose which properties you would like to receive.
+For example: creating a class with only the title.
 
 [Documentation](http://projects.spring.io/spring-cloud/spring-cloud.html#spring-cloud-feign)
 
