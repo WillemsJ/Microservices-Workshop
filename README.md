@@ -12,19 +12,18 @@ The Config server needs a repository where all the config is stored.
 * Go to your GitHub and add a new repository.
 * Name this `ws-config` and clone the repo. 
 * Add a yml file for each microservice named after the configured application name.
+* Push to the remote master.
 
-{% highlight yml %}
  spring:
    application:
      name: applicationName
-{% endhighlight %}
 
-* Go to [Spring Initializr]
+* Go to [Spring Initializr](https://start.spring.io/)
 * Add the following dependencies
-    * Eureka Discovery
     * Config Server
     * Actuator
 * Generate, unzip and add to your local git.
+* Change properties to yml file. 
 * Figure out how the config server fetches his configuration of `ws-config` for the correct microservice
     
 
@@ -32,8 +31,10 @@ The Config server needs a repository where all the config is stored.
 * Go to your microservices
 * Enable the config client by adding it to your classpath. 
 * Create a bootstrap.yml file. 
-* Configure the config client in the bootstrap.
-* Find out how to fetch the configuration of the server.
+* Place the Spring application name in the bootstrap
+* Remove the application.yml
+
+### [Documentation](http://cloud.spring.io/spring-cloud-static/spring-cloud-config/1.2.3.RELEASE/#_spring_cloud_config_server)
 
 ## End Result
 When starting up your microservices you will see a fetch happening to the config server. 
