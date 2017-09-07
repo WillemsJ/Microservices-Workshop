@@ -12,7 +12,7 @@ With the help of only one annotation, all default configuration has been done fo
 Just add @EnableFeignClients on top of your application class and you're good to go.
 
 * Create a Feign client interface 
-* //TODO 
+*  
 
 
 ## End result
