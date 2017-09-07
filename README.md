@@ -1,44 +1,25 @@
-# Chapter 3: Spring Cloud Config Server 
-Aside from discovering our services, we need a way to centralize and externalize our configuration.
-In the theory class, we explained that we follow the 12 factor app as guidelines in building microservices. 
-One of these principles is a strict separation of config from code.
-This is because config varies substantially across deploys, code does not. 
-Spring Cloud Config server provides an HTTP, resource-based API for external configuration to tackle this issue.
+# Chapter 4: Spring Cloud Zuul
+To unify our traffic to one service, we will be implementing an edge service application.
+Take it as the gateway to your microservices, where you can stop, pass through and modify requests to the downstream services.
+If you decide to scale up your microservice to 2 instances, Zuul will load balance requests to both instances to reduce load. 
+For routing to the microservices our goal is to define the correct route to the correct service. 
+For example /rental is mapped on rental service and /movie on the movie service.
+With the help of Eureka, Zuul will find the correct microservices to handle the requests to.
 
 ## Exercise 
-
-### Spring Cloud Config Server
-The Config server needs a repository where all the config is stored. 
-* Go to your GitHub and add a new repository.
-* Name this `ws-config` and clone the repo. 
-* Add a yml file for each microservice named after the configured application name.
-
-{% highlight yml %}
- spring:
-   application:
-     name: applicationName
-{% endhighlight %}
-
-* Go to [Spring Initializr]
-* Add the following dependencies
+* Go to [Spring Initializr](https://start.spring.io/)
+* Add following dependencies
+    * Zuul
     * Eureka Discovery
-    * Config Server
-    * Actuator
-* Generate, unzip and add to your local git.
-* Figure out how the config server fetches his configuration of `ws-config` for the correct microservice
-    
+    * Config Client
+* Generate, unzip, put it in your local git.
+* Make it possible to fetch configuration from the config server.
+* Make it possible to discover the microservices.
 
-### Spring Cloud Config Client
-* Go to your microservices
-* Enable the config client by adding it to your classpath. 
-* Create a bootstrap.yml file. 
-* Configure the config client in the bootstrap.
-* Find out how to fetch the configuration of the server.
 
-## End Result
-When starting up your microservices you will see a fetch happening to the config server. 
-If it is successful, your work is done here. 
+## End result
+When starting all your applications, go to your Zuul address and try out your routing to the microservices.
+Example: localhost:9090/rental/rentals
 
-## Next step
-`git checkout chpt4-Zuul`
-
+## Next Step
+`git checkout chpt5-FeignClient`
