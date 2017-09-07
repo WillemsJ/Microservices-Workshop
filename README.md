@@ -15,20 +15,14 @@ The next exercises will be done in Spring Data, if you need more help with your 
 [Spring Data JPA](https://docs.spring.io/spring-data/jpa/docs/1.11.6.RELEASE/reference/html/)
 [Spring Data REST](https://docs.spring.io/spring-data/rest/docs/current/reference/html/)
 
-### Rental Service
-
+### Movie Service
 * Find me the movies that are still available.
-* Get me the most recent rented movies.
-* Get me the rented movies of Kevin VH.
-
-#### Extra
-* Make a save rental method where movie gets updated.
+#### Rental Service
+* Make a save method where rental gets saved and movie becomes unavailable.
+  * Check first if the movie is available before saving.
 * Make a soft delete method on rental where the movie gets back available.
 
-
-
 [Documentation](http://projects.spring.io/spring-cloud/spring-cloud.html#spring-cloud-feign)
-
 
 ## End result
 Go to localhost:<port zuul>/rental/rentals/search
