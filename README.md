@@ -21,6 +21,12 @@ If you found the solution, the logs will tell you that they register themselves 
 * You should now see an UI Eureka dashboard with both the microservices registered.
 
 
+## Next step
+ ```sh
+   git checkout chpt3-ConfigServer
+   ```
+
+
 
 
 
