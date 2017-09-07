@@ -11,7 +11,9 @@ Add the Feign dependency to the rental and movie service.
 With the help of only one annotation, all default configuration has been done for you.
 Just add @EnableFeignClients on top of your application class and you're good to go.
 
-The next exercises will be done in Spring Data, if you need more help with your exercises please consult the [documentation](https://docs.spring.io/spring-data/jpa/docs/1.11.6.RELEASE/reference/html/)
+The next exercises will be done in Spring Data, if you need more help with your exercises please consult 
+[Spring Data JPA](https://docs.spring.io/spring-data/jpa/docs/1.11.6.RELEASE/reference/html/)
+[Spring Data REST](https://docs.spring.io/spring-data/rest/docs/current/reference/html/)
 
 ### Rental Service
 
