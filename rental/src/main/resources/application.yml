@@ -11,3 +11,8 @@ spring:
     sql-script-encoding: UTF-8
 server:
   port: 8081
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8092/eureka/
