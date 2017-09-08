@@ -17,18 +17,26 @@ The next exercises will be done in Spring Data, if you need more help with your 
 
 ### Movie Service
 * Find me the movies that are still available.
+* Create a MovieController as a RepositoryRestController and map /movies to it.
+ * Make an update method to make your movies available/unavailable.
+ * Make a findAll method to get all movies.
+
 ### Rental Service
-* Make a save method where rental gets saved and movie becomes unavailable.
-  * Check first if the movie is available before saving.
-* Make a soft delete method on rental where the movie gets back available.
+* The operations are made in the RentalController
+* Create a RentalController as a RepositoryRestController and map /rentals to it
+ * Make a save method where rental gets saved and movie becomes unavailable.
+   * Create a Feign Movie Client to define your API calls.
+   * Be sure that you are updating movies that are available ( Use your MovieRepository for querying )
+ * Create a delete method on rental where it deletes the rental and let the movies get back available.
+ * Create a findAll method to get all the rentals
 
 ### Tip 1
 For making the Rental exercises happen, we will have to duplicate Movie class inside the Rental service to let the Feign Client work.
 You can still choose which properties you would like to receive.
-For example: creating a class with only the title.
+You will be needing a Movie class with the title and rentalUUID.
 
 ### Tip 2
-To receive an array from another microservice, use Resources<> around your object instead of List<>
+To receive an array from another microservice, use Resources<> around your object instead of List<> since Spring Data Rest enables HATOAS by default. 
 
 ### POST JSON body
 ```
