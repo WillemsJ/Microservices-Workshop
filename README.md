@@ -7,6 +7,7 @@ If you have any questions, try to research for yourself and then ask questions.
 
 ### Prerequisites
 1. **Editor**. Intellij will be the best choice for implementing microservices. 
+2. Fork this repository
 
 
 Let's go to our first exercise.
