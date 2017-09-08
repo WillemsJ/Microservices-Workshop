@@ -1,6 +1,5 @@
 package be.ordina.rental.rental;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 
@@ -24,7 +23,7 @@ public class Rental implements Serializable {
 	private LocalDate endDate;
 
 
-	private void setUuid(UUID uuid) {
+	public void setUuid(UUID uuid) {
 		this.uuid = uuid;
 	}
 
@@ -35,8 +34,8 @@ public class Rental implements Serializable {
 		}
 	}
 
-	@JsonIgnore
-	private UUID getUuid() {
+
+	public UUID getUuid() {
 		return uuid;
 	}
 
