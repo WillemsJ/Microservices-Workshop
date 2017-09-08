@@ -52,7 +52,7 @@ To receive an array from another microservice, use Resources<> around your objec
 [Documentation](http://projects.spring.io/spring-cloud/spring-cloud.html#spring-cloud-feign)
 
 ## End result
-Go to localhost:<port zuul>/rental/movies/search for the first exercise
+Go to localhost:port/rental/movies/search for the first exercise
 For the further exercises, use Postman for performing the operations.
 
 
